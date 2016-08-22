@@ -16,7 +16,7 @@ namespace Web.Controllers
             ExpenseDAL dal = new ExpenseDAL();
             dal.GetExpenses();
             return View();
-        }
+        } 
 
         public ActionResult About()
         {
