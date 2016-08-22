@@ -1,0 +1,257 @@
+﻿@using Web.Models;
+@model ExpenseModel
+@{
+    ViewBag.Title = "Add Expense";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <style type="text/css">
+        .modal-dialog {
+            position: absolute;
+            left: 50%;
+            margin-left: -312px;
+            height: 500px;
+            top: 50%;
+            margin-top: -250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <h1> Add New Expense</h1>
+    </div>
+
+    <div class="container ">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">New Category Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <input type="text" class="form-control" id="CatName" placeholder="Enter Category Name">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" disabled="disabled" id="btnSaveCat" onclick="SaveCategory()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="Name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="Date" class="col-sm-2 control-label">Date</label>
+                <div class="col-sm-10" data-date-format="MM/DD/YYYY">
+                    <input type="text" class="form-control" placeholder="MM/DD/YYYY" id="Date"
+                           data-bv-notempty="true" data-bv-notempty-message="Date is required and cannot be empty"
+                           data-date-format="MM/DD/YYYY" data-bv-date-message="Invalid Date" />
+                </div>
+            </div>
+
+            <div class="form-group" id="divAmount">
+                <label for="Amount" class="col-sm-2 control-label">Amount</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control has-error" id="Amount" placeholder="Amount" onkeydown="OnNumber()">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Description" placeholder="Description">
+                </div>
+            </div>
+
+            <div class="form-group dropdown">
+                <label for="Category" class="col-sm-2 control-label">Category</label>
+                <div class="col-sm-3">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="BtnCat" data-toggle="dropdown" name="categoryName">
+                        Categories
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu"></ul>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Category</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-info btn-lg" id="BtnSave" onclick="OnSave()" value="Save Expense">
+                </div>
+            </div>          
+        </form>
+
+    </div>
+
+
+    <script type="text/javascript">
+        var isloaded = false;
+        $(function () {
+
+            $('#BtnSave').prop('disabled', true);
+            $('.form-group input').keyup(function () {
+
+                var empty = false;
+                $('.form-group input').each(function () {
+                    if ($(this).val().length == 0) {
+                        empty = true;
+                    }
+                });
+
+                if (empty) {
+                    $('#BtnSave').attr('disabled', 'disabled');
+                } else {
+                    $('#BtnSave').attr('disabled', false);
+                }
+            });
+
+            $("#CatName").keyup(function () {
+                alert("he");
+                if ($("#CatName").val().length > 0) {
+                    $("#btnSaveCat").attr('disabled', false);
+                }
+            });
+
+            function allFilled() {
+
+                var filled = true;
+                $('body input').each(function () {
+                    if ($(this).val() == '') filled = false;
+                });
+
+                return filled;
+            }
+
+
+            $('#Date').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            },
+            function (start, end, label) { //no need for this
+
+            });
+
+            $(".dropdown").on("show.bs.dropdown", function (event) {
+                {
+                    var x = $(event.relatedTarget).text(); // Get the button text
+                    $.ajax({
+                        url: '/Home/GetCat',
+                        type: 'GET',
+                        contentType: "application/json",
+                        processData: false,
+                        success: function (result) {
+                            $(".dropdown ul li").remove();
+                            for (var i in result) {
+                                console.log(result);
+                                $(".dropdown ul").append('<li><a role="menuitem" data-value=' + result[i].Name + ' tabindex="-1" href="#">' + result[i].Name + '</a></li>');
+                            }
+                        },
+                        error: function (request, status, error) {
+                            alert(request.responseText);
+                        }
+                    });
+                }
+            });
+
+            $(".dropdown-menu").on('click', 'li a', function () {
+                $(this).parents(".dropdown").find('#BtnCat').html($(this).text() + ' <span class="caret"></span>');
+                console.log($(this).parents(".dropdown").find('#BtnCat').val($(this).data('value')));
+            });
+
+        });
+        function OnNumber() {
+            $("#Amount").keydown(function () {
+                var value = $("#Amount").val();
+                if (isNaN(value)) {
+                    $("#divAmount").addClass("has-error");
+                }
+                else {
+                    $("#divAmount").removeClass("has-error");
+                }
+            });
+        }
+
+        function OnSave() {
+            var model = new Object();
+            model.Name = document.getElementById("Name").value;
+            model.Description = document.getElementById("Description").value;
+            model.Amount = document.getElementById("Amount").value;
+            model.Date = document.getElementById("Date").value;
+
+            var cat = new Object();
+            cat.Name = document.getElementById("BtnCat").value
+            model.Cat = cat;
+
+
+            $.ajax({
+                type: "POST",
+                url: '/Home/SaveExpense',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ exp: model }),
+                processData: false,
+                dataType: "json",
+                success: function (msg) {
+                    alert(msg);
+                    window.location.href = '/Home/About';
+                }
+            });
+        }
+
+        function SaveCategory() {
+            //check if the category exists then save
+            var isloaded = false;
+            var category_Name = $("#CatName").val();
+            $.ajax({
+                url: "/Home/SaveCat",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify({ category_name: category_Name }),
+                success: function (Result) {               
+                    $("#myModal").modal('hide');
+                    $(".dropdown ul li").remove();
+                    console.log(Result);
+                    for (var i in Result) {
+                        $(".dropdown ul").append('<li><a role="menuitem" data-value=' + Result[i].Name + ' tabindex="-1" href="#">' + Result[i].Name + '</a></li>');
+                        isloaded = true;
+                    }
+                    return false;
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+            });
+        }
+
+
+    </script>
+</body>
+</html>

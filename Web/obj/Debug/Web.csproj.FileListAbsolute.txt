@@ -1,0 +1,106 @@
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\ApplicationInsights.config
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\csc.exe
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\vbc.exe
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Web.dll.config
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Web.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Web.pdb
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Antlr3.Runtime.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.Web.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Newtonsoft.Json.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Helpers.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Mvc.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Optimization.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Razor.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\WebGrease.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.Web.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Helpers.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Mvc.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Optimization.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.Razor.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Antlr3.Runtime.pdb
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\bin\Newtonsoft.Json.xml
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\obj\Debug\Web.dll
+C:\Users\bram\Documents\Visual Studio 2015\Projects\Web\Web\obj\Debug\Web.pdb
+D:\tmp\Web\Web\bin\ApplicationInsights.config
+D:\tmp\Web\Web\bin\roslyn\csc.exe
+D:\tmp\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\tmp\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\tmp\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\tmp\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\tmp\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\tmp\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\tmp\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+D:\tmp\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\tmp\Web\Web\bin\roslyn\vbc.exe
+D:\tmp\Web\Web\bin\roslyn\VBCSCompiler.exe
+D:\tmp\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+D:\tmp\Web\Web\bin\Web.dll.config
+D:\tmp\Web\Web\bin\Web.dll
+D:\tmp\Web\Web\bin\Web.pdb
+D:\tmp\Web\Web\bin\Antlr3.Runtime.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.Web.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.WindowsServer.dll
+D:\tmp\Web\Web\bin\Microsoft.ApplicationInsights.dll
+D:\tmp\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\tmp\Web\Web\bin\Microsoft.Web.Infrastructure.dll
+D:\tmp\Web\Web\bin\Newtonsoft.Json.dll
+D:\tmp\Web\Web\bin\System.Web.Helpers.dll
+D:\tmp\Web\Web\bin\System.Web.Mvc.dll
+D:\tmp\Web\Web\bin\System.Web.Optimization.dll
+D:\tmp\Web\Web\bin\System.Web.Razor.dll
+D:\tmp\Web\Web\bin\System.Web.WebPages.Deployment.dll
+D:\tmp\Web\Web\bin\System.Web.WebPages.dll
+D:\tmp\Web\Web\bin\System.Web.WebPages.Razor.dll
+D:\tmp\Web\Web\bin\WebGrease.dll
+D:\tmp\Web\Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\tmp\Web\Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\tmp\Web\Web\bin\Microsoft.AI.Web.xml
+D:\tmp\Web\Web\bin\Microsoft.AI.WindowsServer.xml
+D:\tmp\Web\Web\bin\Microsoft.ApplicationInsights.xml
+D:\tmp\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\tmp\Web\Web\bin\System.Web.Helpers.xml
+D:\tmp\Web\Web\bin\System.Web.Mvc.xml
+D:\tmp\Web\Web\bin\System.Web.Optimization.xml
+D:\tmp\Web\Web\bin\System.Web.Razor.xml
+D:\tmp\Web\Web\bin\System.Web.WebPages.xml
+D:\tmp\Web\Web\bin\System.Web.WebPages.Deployment.xml
+D:\tmp\Web\Web\bin\System.Web.WebPages.Razor.xml
+D:\tmp\Web\Web\bin\Antlr3.Runtime.pdb
+D:\tmp\Web\Web\bin\Newtonsoft.Json.xml
+D:\tmp\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\tmp\Web\Web\obj\Debug\Web.dll
+D:\tmp\Web\Web\obj\Debug\Web.pdb
